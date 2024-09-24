@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+/* Weights: 400*/
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+/*  Weights: 400, 600, 700 */
+
+:root {
+  /* ### Primary */
+
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+
+  /* ### Fonts */
+  --font-young: "Young Serif", serif;
+  --font-outfit: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--Eggshell);
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-outfit);
+}
+
+/* main container */
+main {
+  background-color: var(--White);
+  padding: 3rem;
+  border-radius: 1.5rem;
+  max-width: 55rem;
+}
+
+/* common styles */
+h1,
+h2 {
+  font-family: var(--font-young);
+}
+
+h1 {
+  color: var(--Dark-Charcoal);
+  font-size: 3.5rem;
+  margin-block: 1.5rem;
+}
+
+h2 {
+  color: var(--Nutmeg);
+  margin-block: 1rem;
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: var(--Dark-Raspberry);
+  font-size: 1.5rem;
+  margin-block: 1rem;
+}
+
+aside,
+section {
+  background-color: var(--Rose-White);
+  margin-block: 2.5rem;
+}
+
+strong {
+  color: var(--Dark-Charcoal);
+}
+
+hr {
+  margin: 1rem;
+  opacity: 0.3;
+}
+
+/* header section */
+header img {
+  max-width: 100%;
+  border-radius: 1.2rem;
+}
+
+header p {
+  margin-bottom: 3.5rem;
+  font-size: 1.2rem;
+}
+
+/* preparation aside */
+aside {
+  margin-left: 2rem;
+}
+
+aside ul > li {
+  color: var(--Dark-Raspberry);
+  margin-block: 0.5rem;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+}
+
+aside p {
+  color: var(--Dark-Charcoal);
+  margin-left: 1rem;
+}
+
+/* ingredients section */
+
+.ingredients ul {
+  margin-left: 2rem;
+}
+
+.ingredients li {
+  color: var(--Wenge-Brown);
+  margin-block: 1rem;
+  font-size: 1.2rem;
+}
+
+.ingredients p {
+  color: var(--Dark-Charcoal);
+}
+
+/* instructions section */
+.instructions ol {
+  margin-left: 1.5rem;
+}
+
+.instructions li {
+  color: var(--Wenge-Brown);
+  margin-block: 1rem;
+  font-size: 1.2rem;
+}
+
+.instructions p {
+  color: var(--Dark-Charcoal);
+  margin-left: 1rem;
+}
+
+/* nutrition section */
+.nutrition span {
+  display: block;
+  font-size: 1.2rem;
+  margin-block: 1.4rem;
+}
+
+article {
+  display: flex;
+  align-items: center;
+}
+
+article p {
+  text-align: left;
+  margin-left: 3%;
+  width: 40%;
+  font-size: 1.2rem;
+}
+
+article h4 {
+  color: var(--Wenge-Brown);
+  font-size: 1.3rem;
+}
+
+.last-article {
+  margin-bottom: -3rem;
+}
+
+/* responsive */
+@media (max-width: 520px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
